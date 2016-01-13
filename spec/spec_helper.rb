@@ -1,6 +1,7 @@
 require 'pry'
 require 'rspec'
 require 'nokogiri'
+require 'open-uri'
 
 def safely_require(file)
   require_relative file
@@ -10,6 +11,7 @@ end
 
 safely_require '../lib/post'
 safely_require '../lib/comment'
+safely_require '../lib/HN_scraper'
 
 
 
